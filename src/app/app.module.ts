@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { QuillEditorModule } from 'ngx-quill-editor';
+import { QuillEditorModule } from './ngx-quill-editor';
 
 @NgModule({
   declarations: [

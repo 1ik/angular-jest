@@ -13,6 +13,7 @@ Object.defineProperty(window, 'sessionStorage', {value: mock()});
 Object.defineProperty(document, 'doctype', {
     value: '<!DOCTYPE html>'
 });
+Object.defineProperty(window, 'CSS', {});
 Object.defineProperty(window, 'getComputedStyle', {
 value: () => {
     return {

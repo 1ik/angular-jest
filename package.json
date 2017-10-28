@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "jest": "jest"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +22,12 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "@types/jest": "^21.1.5",
     "core-js": "^2.4.1",
+    "jest": "^21.2.1",
+    "jest-preset-angular": "^4.0.1",
+    "ngx-quill": "^1.5.1",
+    "ngx-quill-editor": "^2.2.2",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
@@ -45,5 +51,12 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.3.3"
+  },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png)$": "<rootDir>/__mocks__/image.js"
+    }
   }
 }

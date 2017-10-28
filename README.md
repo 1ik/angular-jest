@@ -5,7 +5,7 @@ The project aims to set up a project which will contain various different angula
 Currently working with the libraries listed below:
 
  * [Material](https://github.com/angular/material2)
- * [Angular CDK](https://www.npmjs.com/package/@angular/cdk)
+ * [Angular CDK](https://www.npmjs.com/package/@angular/cdk) - had to add a fix for this in `./jestGlobalMocks.ts#16`
  * [NGX Quill](https://github.com/surmon-china/ngx-quill-editor/) - with a issue but has a fix. Waiting for a response to created [issue#30](https://github.com/surmon-china/ngx-quill-editor/issues/30)
 
 The project is based on [Angular CLI](https://cli.angular.io) and More library updates will be added gradually.
